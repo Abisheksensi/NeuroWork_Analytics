@@ -2,6 +2,9 @@
 pandas==2.2.2
 numpy==1.26.4
 
+# Data access
+kaggle==1.6.17
+
 # Machine learning
 scikit-learn==1.4.2
 joblib==1.4.2
