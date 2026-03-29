@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Workplace Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero-card">
+            <p class="eyebrow">Workplace Mental Health Screening</p>
+            <h1>Mental Health Workplace Assessment</h1>
+            <p class="subtitle">
+                Answer a few workplace and wellbeing questions to explore treatment-seeking risk patterns.
+            </p>
+        </header>
+
+        <main class="content-card">
+            <section class="step-indicator" aria-label="Progress">
+                <div class="step-item active" data-step-indicator="1">
+                    <span class="step-circle">1</span>
+                    <span class="step-label">Step 1</span>
+                </div>
+                <div class="step-item" data-step-indicator="2">
+                    <span class="step-circle">2</span>
+                    <span class="step-label">Step 2</span>
+                </div>
+                <div class="step-item" data-step-indicator="3">
+                    <span class="step-circle">3</span>
+                    <span class="step-label">Step 3</span>
+                </div>
+            </section>
+
+            <form class="assessment-form" id="assessment-form">
+                <section id="step-1" class="form-step">
+                    <h2>Personal Background</h2>
+
+                    <label for="age">Age</label>
+                    <input id="age" name="Age" type="number" min="18" max="75" required>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="family-history">Family history of mental illness</label>
+                    <select id="family-history" name="family_history">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <label for="self-employed">Self-employed</label>
+                    <select id="self-employed" name="self_employed">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <div class="button-row align-right">
+                        <button type="button" class="primary-button" id="step-1-next">Next</button>
+                    </div>
+                </section>
+
+                <section id="step-2" class="form-step" hidden>
+                    <h2>Workplace Context</h2>
+
+                    <label for="company-size">Company size</label>
+                    <select id="company-size" name="no_employees">
+                        <option value="1-5">1-5</option>
+                        <option value="6-25">6-25</option>
+                        <option value="26-100">26-100</option>
+                        <option value="100-500">100-500</option>
+                        <option value="500-1000">500-1000</option>
+                        <option value="More than 1000">More than 1000</option>
+                    </select>
+
+                    <label for="remote-work">Remote work</label>
+                    <select id="remote-work" name="remote_work">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Sometimes">Sometimes</option>
+                    </select>
+
+                    <label for="tech-company">Tech company</label>
+                    <select id="tech-company" name="tech_company">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <label for="benefits">Mental health benefits provided</label>
+                    <select id="benefits" name="benefits">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Don't know">Don't know</option>
+                    </select>
+
+                    <div class="button-row">
+                        <button type="button" class="secondary-button" id="step-2-back">Back</button>
+                        <button type="button" class="primary-button" id="step-2-next">Next</button>
+                    </div>
+                </section>
+
+                <section id="step-3" class="form-step" hidden>
+                    <h2>Support and Disclosure</h2>
+
+                    <label for="work-interfere">Work interference with daily tasks</label>
+                    <select id="work-interfere" name="work_interfere">
+                        <option value="Never">Never</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Often">Often</option>
+                    </select>
+
+                    <label for="seek-help">Employer encourages seeking help</label>
+                    <select id="seek-help" name="seek_help">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Don't know">Don't know</option>
+                    </select>
+
+                    <label for="negative-consequences">Fear of negative consequences for disclosure</label>
+                    <select id="negative-consequences" name="mental_health_consequence">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Maybe">Maybe</option>
+                    </select>
+
+                    <label for="care-options">Care options available</label>
+                    <select id="care-options" name="care_options">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+
+                    <div class="button-row">
+                        <button type="button" class="secondary-button" id="step-3-back">Back</button>
+                        <button type="submit" class="primary-button" id="submit-button">Submit</button>
+                    </div>
+                </section>
+            </form>
+
+            <section id="results" class="results-card" hidden>
+                <div id="prediction-banner" class="prediction-banner positive">
+                    Prediction will appear here.
+                </div>
+
+                <div class="confidence-section">
+                    <div class="section-heading">
+                        <h3>Confidence Score</h3>
+                        <span id="confidence-percent">0%</span>
+                    </div>
+                    <div class="confidence-track">
+                        <div id="confidence-bar" class="confidence-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div id="shap-explanation" class="explanation-section">
+                    <h3>Top SHAP Drivers</h3>
+                    <div class="shap-list">
+                        <div class="shap-item">
+                            <span class="shap-label">Feature name</span>
+                            <div class="shap-bar-track">
+                                <div class="shap-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="model-comparison" class="comparison-section">
+                    <h3>Model Comparison</h3>
+                    <p>Random Forest and Logistic Regression outputs will be shown here.</p>
+                </div>
+
+                <p class="disclaimer">
+                    This assessment is not a diagnosis and should not replace professional medical advice or care.
+                </p>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>For educational purposes only.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,7 +1,5 @@
 from pathlib import Path
 
-from kaggle.api.kaggle_api_extended import KaggleApi
-
 
 DATASET_NAME = "osmi/mental-health-in-tech-survey"
 DOWNLOAD_DIR = Path("data/raw")
@@ -14,8 +12,23 @@ def ensure_dataset_downloaded() -> Path:
     if DATA_FILE.exists():
         return DATA_FILE
 
+    try:
+        from kaggle.api.kaggle_api_extended import KaggleApi
+    except Exception as exc:
+        raise RuntimeError(
+            "Kaggle API is not available. Install dependencies and configure Kaggle credentials."
+        ) from exc
+
     api = KaggleApi()
-    api.authenticate()
+
+    try:
+        api.authenticate()
+    except OSError as exc:
+        raise RuntimeError(
+            "Kaggle credentials were not found. Place kaggle.json in ~/.kaggle/kaggle.json "
+            "or configure KAGGLE_USERNAME and KAGGLE_KEY."
+        ) from exc
+
     api.dataset_download_files(
         DATASET_NAME,
         path=str(DOWNLOAD_DIR),

@@ -3,6 +3,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 from clean_data import clean_data
+from download_data import ensure_dataset_downloaded
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
@@ -138,7 +139,8 @@ def split_data(df):
 
 
 def run_preprocessing():
-    dataframe = pd.read_csv("data/raw/survey.csv")
+    data_path = ensure_dataset_downloaded()
+    dataframe = pd.read_csv(data_path)
     cleaned_df = clean_data(dataframe)
     imputed_df = handle_missing_values(cleaned_df)
     encoded_df = encode_features(imputed_df)

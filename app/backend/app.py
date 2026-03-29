@@ -38,6 +38,9 @@ def health():
 def predict():
     try:
         input_json = request.get_json()
+        if not input_json:
+            raise ValueError("Request JSON body is empty.")
+
         input_df = pd.DataFrame([input_json]).reindex(
             columns=feature_columns,
             fill_value=0,

@@ -1,0 +1,1943 @@
+
+==================== STEP 1 — FOLDER STRUCTURE ====================
+/Users/abishek/MachineLearningModels/MLModule_Project
+    project_audit.py
+    project_audit.txt
+    requirements.txt
+    run_pipeline.py
+    setup_project.py
+    .git/
+        COMMIT_EDITMSG
+        FETCH_HEAD
+        HEAD
+        config
+        description
+        index
+        hooks/
+            applypatch-msg.sample
+            commit-msg.sample
+            fsmonitor-watchman.sample
+            post-update.sample
+            pre-applypatch.sample
+            pre-commit.sample
+            pre-merge-commit.sample
+            pre-push.sample
+            pre-rebase.sample
+            pre-receive.sample
+            prepare-commit-msg.sample
+            push-to-checkout.sample
+            sendemail-validate.sample
+            update.sample
+        info/
+            exclude
+        logs/
+            HEAD
+            refs/
+                heads/
+                    main
+                remotes/
+                    origin/
+                        HEAD
+                        main
+        objects/
+            05/
+                b6d4f0e821b3299a5949458efd8e2f67b2a246
+            13/
+                2fca9c37d9436cbd0924a552a9282e20cbdba0
+            17/
+                ea5fdbe37836b0d242447824385ae1595eae86
+            23/
+                3e4976106017f25d0041813b89933c7ce8fcc3
+            27/
+                75a69cbdc963ad1dab51ad70253e49cb693690
+            2c/
+                f1b5015ca1d8db2039ac44154ff9ebf21e3aee
+            34/
+                dfa101711afe01b25fa7bea6ec38db2aa617ad
+            39/
+                7c42464f0face70d96b861381ac40c4fddcac8
+            3b/
+                598a75f4db2ab4a7b67eedd0000d0f991093d8
+            3f/
+                70e4098dafc0820ecd5ff4ba014b62da40bdce
+                e316c9317f2562fd003b1267e6f07fa5e06192
+            43/
+                d5a287948e6172bad9fb7b0adb8b0991994ac7
+            44/
+                075f9ca751867c47d0adc63c6ed205b3c8fc4f
+                3d2b5610447299b6205ba3ff2a7f0739d48f99
+            46/
+                ebbf45e8db099a2d025de784c899cf87007af3
+            47/
+                01b4cfbce72996c47bea069cb92c19c1147389
+            4a/
+                592751959f7e2c49595a5b59de19ff11c76f7c
+            4b/
+                f637c3652b44970fe5a85aef146127309f5dfc
+            4c/
+                0d6d927688064c1fe93fa14bd705a3ce1d842c
+                29f1218b25a86fe743e507b84a14d67e7cfc6a
+            50/
+                7309f85a28bcb461df5f847232fd48a5766fc1
+            58/
+                9ea80763e78ef0752f53acfca8ee7a09b877ee
+            5e/
+                a0d073818b1371a28051932bdabc5f2d6b5624
+            63/
+                60019e607cce121d571a38f85d5e7f1919b702
+                c42d9520b6f02c442e26452a15dc6a872a2bcc
+            65/
+                fdfa381832d8ee869df153dd57c5f60fb628d6
+            6d/
+                750caee2a21290465dd10df82810664741ed76
+            76/
+                13144ec429affd5e2905e02d51e1d7aca54045
+            83/
+                5b75a1906f3c996e8d2d1a21835ddb6e0ebc99
+            8e/
+                e766c61c9376dfbd189bd452866a9505ce62d1
+            95/
+                a28dcaa3e2f9ed0ad11bf4a598751d200eebeb
+            99/
+                bc2c8f089f9ca39f750712c225311f57534080
+            a2/
+                8e23faafaaf5b79a62f83ff50530757abb34a5
+                c1b552c0fb03622543f081e26f6a849ebbf028
+            af/
+                8787c47428ab965db8d3393bea0d2b9aba36d6
+            b9/
+                d6bb0d4e75f1f4538acd3fa9ea05b0b7e76238
+            bc/
+                bf259ed29bb620249261d8262172f5d4584c96
+            be/
+                e9d8bb7b2e24208641dd92652bd93423eebd2b
+            c7/
+                c8260d5327c4e00afd3a5ad327d18c4d3aef30
+            c9/
+                d1d6db8b759d1251687fa3c15a7b96db04b650
+            cd/
+                7bf9bc19b40df672e8ed062dca4b9e28e8e06b
+            d4/
+                3d22c429ed303630490fa036b034d2cc28ad82
+            d5/
+                64d0bc3dd917926892c55e3706cc116d5b165e
+            da/
+                c98b5e7bb828ea91eccf1caacc8be5b9b2b5f9
+            db/
+                700aea492d2105f0c6efab8ef92f7ef3d3f430
+            e6/
+                9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+            e8/
+                5f61620f9d03e658ae53eb70325d8b32932f4f
+            fb/
+                b215e252161f798d7b2b2bf9b304165b862953
+            info/
+            pack/
+        refs/
+            heads/
+                main
+            remotes/
+                origin/
+                    HEAD
+                    main
+            tags/
+    __pycache__/
+        run_pipeline.cpython-313.pyc
+        setup_project.cpython-313.pyc
+    app/
+        backend/
+            .gitkeep
+            app.py
+            __pycache__/
+                app.cpython-313.pyc
+        frontend/
+            .gitkeep
+            index.html
+            script.js
+            style.css
+    data/
+        processed/
+            .gitkeep
+            X_test.csv
+            X_train.csv
+            y_test.csv
+            y_train.csv
+        raw/
+            .gitkeep
+            survey.csv
+    models/
+        .gitkeep
+        feature_columns.pkl
+        logistic_regression.pkl
+        random_forest.pkl
+        scaler.pkl
+    notebooks/
+        .gitkeep
+        eda.py
+        __pycache__/
+            eda.cpython-313.pyc
+    outputs/
+        feature_importance.csv
+        model_comparison.csv
+        plots/
+            .gitkeep
+            feature_importance.png
+            lr_confusion_matrix.png
+            rf_confusion_matrix.png
+    src/
+        .gitkeep
+        clean_data.py
+        download_data.py
+        evaluate_logistic_regression.py
+        evaluate_random_forest.py
+        feature_importance.py
+        load_data.py
+        preprocess.py
+        shap_explainer.py
+        shap_explanations.py
+        train_logistic_regression.py
+        train_random_forest.py
+        __pycache__/
+            clean_data.cpython-310.pyc
+            download_data.cpython-310.pyc
+            download_data.cpython-313.pyc
+            evaluate_logistic_regression.cpython-310.pyc
+            evaluate_random_forest.cpython-310.pyc
+            feature_importance.cpython-310.pyc
+            load_data.cpython-313.pyc
+            preprocess.cpython-310.pyc
+            preprocess.cpython-313.pyc
+            shap_explainer.cpython-310.pyc
+            shap_explainer.cpython-313.pyc
+            shap_explanations.cpython-310.pyc
+            shap_explanations.cpython-313.pyc
+            train_logistic_regression.cpython-310.pyc
+            train_random_forest.cpython-310.pyc
+    tests/
+        test_api.py
+        __pycache__/
+            test_api.cpython-313.pyc
+
+==================== STEP 2 — RAW DATA ====================
+Shape: (1259, 27)
+Column names:
+- Timestamp
+- Age
+- Gender
+- Country
+- state
+- self_employed
+- family_history
+- treatment
+- work_interfere
+- no_employees
+- remote_work
+- tech_company
+- benefits
+- care_options
+- wellness_program
+- seek_help
+- anonymity
+- leave
+- mental_health_consequence
+- phys_health_consequence
+- coworkers
+- supervisor
+- mental_health_interview
+- phys_health_interview
+- mental_vs_physical
+- obs_consequence
+- comments
+Data types:
+Timestamp                    object
+Age                           int64
+Gender                       object
+Country                      object
+state                        object
+self_employed                object
+family_history               object
+treatment                    object
+work_interfere               object
+no_employees                 object
+remote_work                  object
+tech_company                 object
+benefits                     object
+care_options                 object
+wellness_program             object
+seek_help                    object
+anonymity                    object
+leave                        object
+mental_health_consequence    object
+phys_health_consequence      object
+coworkers                    object
+supervisor                   object
+mental_health_interview      object
+phys_health_interview        object
+mental_vs_physical           object
+obs_consequence              object
+comments                     object
+Missing value count per column:
+Timestamp                       0
+Age                             0
+Gender                          0
+Country                         0
+state                         515
+self_employed                  18
+family_history                  0
+treatment                       0
+work_interfere                264
+no_employees                    0
+remote_work                     0
+tech_company                    0
+benefits                        0
+care_options                    0
+wellness_program                0
+seek_help                       0
+anonymity                       0
+leave                           0
+mental_health_consequence       0
+phys_health_consequence         0
+coworkers                       0
+supervisor                      0
+mental_health_interview         0
+phys_health_interview           0
+mental_vs_physical              0
+obs_consequence                 0
+comments                     1095
+Treatment value counts:
+treatment
+Yes    637
+No     622
+First 3 rows:
+             Timestamp  Age  Gender        Country state self_employed family_history treatment work_interfere    no_employees remote_work tech_company    benefits care_options wellness_program   seek_help   anonymity               leave mental_health_consequence phys_health_consequence     coworkers supervisor mental_health_interview phys_health_interview mental_vs_physical obs_consequence comments
+0  2014-08-27 11:29:31   37  Female  United States    IL           NaN             No       Yes          Often            6-25          No          Yes         Yes     Not sure               No         Yes         Yes       Somewhat easy                        No                      No  Some of them        Yes                      No                 Maybe                Yes              No      NaN
+1  2014-08-27 11:29:37   44       M  United States    IN           NaN             No        No         Rarely  More than 1000          No           No  Don't know           No       Don't know  Don't know  Don't know          Don't know                     Maybe                      No            No         No                      No                    No         Don't know              No      NaN
+2  2014-08-27 11:29:44   32    Male         Canada   NaN           NaN             No        No         Rarely            6-25          No          Yes          No           No               No          No  Don't know  Somewhat difficult                        No                      No           Yes        Yes                     Yes                   Yes                 No              No      NaN
+
+==================== STEP 3 — PROCESSED DATA ====================
+X_train shape: (1000, 24)
+X_test shape: (251, 24)
+y_train shape: (1000, 1)
+y_test shape: (251, 1)
+X_train columns:
+- Age
+- self_employed
+- family_history
+- work_interfere
+- no_employees
+- remote_work
+- tech_company
+- benefits
+- care_options
+- wellness_program
+- seek_help
+- anonymity
+- leave
+- mental_health_consequence
+- phys_health_consequence
+- coworkers
+- supervisor
+- mental_health_interview
+- phys_health_interview
+- mental_vs_physical
+- obs_consequence
+- Gender_Female
+- Gender_Male
+- Gender_Other
+y_train value counts:
+treatment
+1    505
+0    495
+y_test value counts:
+treatment
+1    127
+0    124
+First 2 rows of X_train:
+   Age  self_employed  family_history  work_interfere  no_employees  remote_work  tech_company  benefits  care_options  wellness_program  seek_help  anonymity  leave  mental_health_consequence  phys_health_consequence  coworkers  supervisor  mental_health_interview  phys_health_interview  mental_vs_physical  obs_consequence  Gender_Female  Gender_Male  Gender_Other
+0   29              0               1               2             2            1             0         0             0                 1          0          0      2                          0                        1          1           2                        1                      0                   0                0           True        False         False
+1   27              0               0               2             5            0             0         1             0                 1          1          2      1                          0                        1          2           2                        0                      0                   1                0          False         True         False
+
+==================== STEP 4 — SAVED MODELS ====================
+Random Forest model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+Random Forest parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+Logistic Regression model type: <class 'sklearn.linear_model._logistic.LogisticRegression'>
+Logistic Regression parameters: {'C': 1.0, 'class_weight': 'balanced', 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 1000, 'multi_class': 'auto', 'n_jobs': None, 'penalty': 'l2', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+Scaler expected feature count: 24
+Feature columns in order:
+- Age
+- self_employed
+- family_history
+- work_interfere
+- no_employees
+- remote_work
+- tech_company
+- benefits
+- care_options
+- wellness_program
+- seek_help
+- anonymity
+- leave
+- mental_health_consequence
+- phys_health_consequence
+- coworkers
+- supervisor
+- mental_health_interview
+- phys_health_interview
+- mental_vs_physical
+- obs_consequence
+- Gender_Female
+- Gender_Male
+- Gender_Other
+
+==================== STEP 5 — PYTHON SOURCE FILES ====================
+===== FILE: src/clean_data.py =====
+from pathlib import Path
+
+import pandas as pd
+
+
+def standardize_gender(value):
+    text = str(value).strip().lower()
+
+    if "female" in text or text == "f":
+        return "Female"
+
+    if "male" in text or text == "m":
+        return "Male"
+
+    return "Other"
+
+
+def clean_data(df):
+    print(f"Shape before cleaning: {df.shape}")
+
+    cleaned_df = df.drop(columns=["Timestamp", "comments", "state", "Country"])
+    cleaned_df = cleaned_df[cleaned_df["Age"].between(18, 75, inclusive="both")]
+    cleaned_df["Gender"] = cleaned_df["Gender"].apply(standardize_gender)
+
+    print(f"Shape after cleaning: {cleaned_df.shape}")
+
+    return cleaned_df
+
+
+if __name__ == "__main__":
+    data_path = Path("data/raw/survey.csv")
+    dataframe = pd.read_csv(data_path)
+    cleaned_dataframe = clean_data(dataframe)
+    print(cleaned_dataframe.head())
+
+===== FILE: src/download_data.py =====
+from pathlib import Path
+
+
+DATASET_NAME = "osmi/mental-health-in-tech-survey"
+DOWNLOAD_DIR = Path("data/raw")
+DATA_FILE = DOWNLOAD_DIR / "survey.csv"
+
+
+def ensure_dataset_downloaded() -> Path:
+    DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+    if DATA_FILE.exists():
+        return DATA_FILE
+
+    try:
+        from kaggle.api.kaggle_api_extended import KaggleApi
+    except Exception as exc:
+        raise RuntimeError(
+            "Kaggle API is not available. Install dependencies and configure Kaggle credentials."
+        ) from exc
+
+    api = KaggleApi()
+
+    try:
+        api.authenticate()
+    except OSError as exc:
+        raise RuntimeError(
+            "Kaggle credentials were not found. Place kaggle.json in ~/.kaggle/kaggle.json "
+            "or configure KAGGLE_USERNAME and KAGGLE_KEY."
+        ) from exc
+
+    api.dataset_download_files(
+        DATASET_NAME,
+        path=str(DOWNLOAD_DIR),
+        unzip=True,
+    )
+
+    if not DATA_FILE.exists():
+        raise FileNotFoundError(
+            f"Dataset download completed, but {DATA_FILE} was not found."
+        )
+
+    return DATA_FILE
+
+
+if __name__ == "__main__":
+    dataset_path = ensure_dataset_downloaded()
+    print(f"Dataset ready at {dataset_path}")
+
+===== FILE: src/evaluate_logistic_regression.py =====
+from pathlib import Path
+
+import joblib
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
+
+
+def evaluate_lr():
+    model = joblib.load("models/logistic_regression.pkl")
+    scaler = joblib.load("models/scaler.pkl")
+
+    X_test = pd.read_csv("data/processed/X_test.csv")
+    y_test = pd.read_csv("data/processed/y_test.csv").squeeze("columns")
+
+    X_test_scaled = scaler.transform(X_test)
+    predictions = model.predict(X_test_scaled)
+    probabilities = model.predict_proba(X_test_scaled)[:, 1]
+
+    print(f"Accuracy: {accuracy_score(y_test, predictions)}")
+    print(f"Precision (weighted): {precision_score(y_test, predictions, average='weighted')}")
+    print(f"Recall (weighted): {recall_score(y_test, predictions, average='weighted')}")
+    print(f"F1 Score (weighted): {f1_score(y_test, predictions, average='weighted')}")
+    print(f"ROC-AUC Score: {roc_auc_score(y_test, probabilities)}")
+
+    confusion = confusion_matrix(y_test, predictions)
+    output_dir = Path("outputs/plots")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues")
+    plt.title("Logistic Regression — Confusion Matrix")
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.savefig(output_dir / "lr_confusion_matrix.png")
+    plt.close()
+
+
+if __name__ == "__main__":
+    evaluate_lr()
+
+===== FILE: src/evaluate_random_forest.py =====
+from pathlib import Path
+
+import joblib
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
+
+
+def calculate_metrics(y_true, predictions, probabilities):
+    return {
+        "Accuracy": accuracy_score(y_true, predictions),
+        "Precision": precision_score(y_true, predictions, average="weighted"),
+        "Recall": recall_score(y_true, predictions, average="weighted"),
+        "F1": f1_score(y_true, predictions, average="weighted"),
+        "ROC_AUC": roc_auc_score(y_true, probabilities),
+    }
+
+
+def evaluate_rf():
+    rf_model = joblib.load("models/random_forest.pkl")
+    lr_model = joblib.load("models/logistic_regression.pkl")
+    scaler = joblib.load("models/scaler.pkl")
+
+    X_test = pd.read_csv("data/processed/X_test.csv")
+    y_test = pd.read_csv("data/processed/y_test.csv").squeeze("columns")
+
+    rf_predictions = rf_model.predict(X_test)
+    rf_probabilities = rf_model.predict_proba(X_test)[:, 1]
+    rf_metrics = calculate_metrics(y_test, rf_predictions, rf_probabilities)
+
+    print(f"Accuracy: {rf_metrics['Accuracy']}")
+    print(f"Precision (weighted): {rf_metrics['Precision']}")
+    print(f"Recall (weighted): {rf_metrics['Recall']}")
+    print(f"F1 Score (weighted): {rf_metrics['F1']}")
+    print(f"ROC-AUC Score: {rf_metrics['ROC_AUC']}")
+
+    output_dir = Path("outputs")
+    plots_dir = output_dir / "plots"
+    plots_dir.mkdir(parents=True, exist_ok=True)
+
+    confusion = confusion_matrix(y_test, rf_predictions)
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(confusion, annot=True, fmt="d", cmap="Greens")
+    plt.title("Random Forest - Confusion Matrix")
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.savefig(plots_dir / "rf_confusion_matrix.png")
+    plt.close()
+
+    X_test_scaled = scaler.transform(X_test)
+    lr_predictions = lr_model.predict(X_test_scaled)
+    lr_probabilities = lr_model.predict_proba(X_test_scaled)[:, 1]
+    lr_metrics = calculate_metrics(y_test, lr_predictions, lr_probabilities)
+
+    comparison_df = pd.DataFrame(
+        [
+            {
+                "Model": "Logistic Regression",
+                "Accuracy": lr_metrics["Accuracy"],
+                "Precision": lr_metrics["Precision"],
+                "Recall": lr_metrics["Recall"],
+                "F1": lr_metrics["F1"],
+                "ROC_AUC": lr_metrics["ROC_AUC"],
+            },
+            {
+                "Model": "Random Forest",
+                "Accuracy": rf_metrics["Accuracy"],
+                "Precision": rf_metrics["Precision"],
+                "Recall": rf_metrics["Recall"],
+                "F1": rf_metrics["F1"],
+                "ROC_AUC": rf_metrics["ROC_AUC"],
+            },
+        ],
+        columns=["Model", "Accuracy", "Precision", "Recall", "F1", "ROC_AUC"],
+    )
+    comparison_df.to_csv(output_dir / "model_comparison.csv", index=False)
+
+
+if __name__ == "__main__":
+    evaluate_rf()
+
+===== FILE: src/feature_importance.py =====
+from pathlib import Path
+
+import joblib
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+
+
+def plot_feature_importance():
+    model = joblib.load("models/random_forest.pkl")
+    X_train = pd.read_csv("data/processed/X_train.csv")
+
+    importance_df = pd.DataFrame(
+        {
+            "feature": X_train.columns,
+            "importance": model.feature_importances_,
+        }
+    ).sort_values(by="importance", ascending=False)
+
+    output_dir = Path("outputs")
+    plots_dir = output_dir / "plots"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plots_dir.mkdir(parents=True, exist_ok=True)
+
+    importance_df.to_csv(output_dir / "feature_importance.csv", index=False)
+
+    top_features = importance_df.head(15).sort_values(by="importance", ascending=True)
+    plt.figure(figsize=(10, 8))
+    sns.barplot(
+        data=top_features,
+        x="importance",
+        y="feature",
+        palette="Blues_r",
+        hue="feature",
+        dodge=False,
+        legend=False,
+    )
+    plt.title("Top 15 Feature Importances — Random Forest")
+    plt.xlabel("Importance Score")
+    plt.ylabel("Feature")
+    plt.savefig(plots_dir / "feature_importance.png")
+    plt.close()
+
+    print("Top 5 features and their scores:")
+    print(importance_df.head(5).to_string(index=False))
+
+
+if __name__ == "__main__":
+    plot_feature_importance()
+
+===== FILE: src/load_data.py =====
+from pathlib import Path
+
+import pandas as pd
+
+from download_data import ensure_dataset_downloaded
+
+
+def load_raw_data(filepath):
+    path = Path(filepath)
+
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Dataset not found at {filepath}. Please download it from Kaggle."
+        )
+
+    dataframe = pd.read_csv(path)
+
+    print(f"Dataset shape: {dataframe.shape}")
+    print(f"Column names: {list(dataframe.columns)}")
+    print("First 5 rows:")
+    print(dataframe.head())
+    print("Data types:")
+    print(dataframe.dtypes)
+
+    return dataframe
+
+
+if __name__ == "__main__":
+    dataset_path = ensure_dataset_downloaded()
+    load_raw_data(dataset_path)
+
+===== FILE: src/preprocess.py =====
+from pathlib import Path
+
+import joblib
+import pandas as pd
+from clean_data import clean_data
+from download_data import ensure_dataset_downloaded
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+
+
+def handle_missing_values(df):
+    imputed_df = df.copy()
+
+    missing_before = imputed_df.isna().sum()
+    missing_before = missing_before[missing_before > 0]
+    print("Missing values before imputation:")
+    print(missing_before)
+
+    for column in imputed_df.columns:
+        if imputed_df[column].dtype == "object":
+            imputed_df[column] = imputed_df[column].fillna(imputed_df[column].mode()[0])
+        elif imputed_df[column].dtype in ["int64", "float64"]:
+            imputed_df[column] = imputed_df[column].fillna(imputed_df[column].median())
+
+    missing_after = imputed_df.isna().sum()
+    missing_after = missing_after[missing_after > 0]
+    print("Missing values after imputation:")
+    print(missing_after)
+
+    return imputed_df
+
+
+def encode_features(df):
+    encoded_df = df.copy()
+
+    binary_columns = [
+        "self_employed",
+        "family_history",
+        "remote_work",
+        "tech_company",
+        "benefits",
+        "care_options",
+        "wellness_program",
+        "seek_help",
+        "anonymity",
+        "mental_health_consequence",
+        "phys_health_consequence",
+        "mental_vs_physical",
+        "obs_consequence",
+    ]
+
+    for column in binary_columns:
+        encoder = LabelEncoder()
+        encoded_df[column] = encoder.fit_transform(encoded_df[column])
+
+    encoded_df["work_interfere"] = encoded_df["work_interfere"].map(
+        {"Never": 0, "Rarely": 1, "Sometimes": 2, "Often": 3}
+    )
+    encoded_df["leave"] = encoded_df["leave"].map(
+        {
+            "Very easy": 0,
+            "Somewhat easy": 1,
+            "Don't know": 2,
+            "Somewhat difficult": 3,
+            "Very difficult": 4,
+        }
+    )
+    encoded_df["no_employees"] = encoded_df["no_employees"].map(
+        {
+            "1-5": 0,
+            "6-25": 1,
+            "26-100": 2,
+            "100-500": 3,
+            "500-1000": 4,
+            "More than 1000": 5,
+        }
+    )
+
+    gender_dummies = pd.get_dummies(
+        encoded_df["Gender"],
+        prefix="Gender",
+        drop_first=False,
+    )
+    encoded_df = encoded_df.drop(columns=["Gender"])
+    encoded_df = pd.concat([encoded_df, gender_dummies], axis=1)
+
+    additional_label_columns = [
+        "coworkers",
+        "supervisor",
+        "mental_health_interview",
+        "phys_health_interview",
+    ]
+
+    for column in additional_label_columns:
+        encoder = LabelEncoder()
+        encoded_df[column] = encoder.fit_transform(encoded_df[column])
+
+    feature_columns = [column for column in encoded_df.columns if column != "treatment"]
+    models_dir = Path("models")
+    models_dir.mkdir(parents=True, exist_ok=True)
+    joblib.dump(feature_columns, models_dir / "feature_columns.pkl")
+
+    return encoded_df
+
+
+def split_data(df):
+    split_df = df.copy()
+    X = split_df.drop(columns=["treatment"])
+
+    encoder = LabelEncoder()
+    y = pd.Series(
+        encoder.fit_transform(split_df["treatment"]),
+        name="treatment",
+        index=split_df.index,
+    )
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X,
+        y,
+        test_size=0.2,
+        random_state=42,
+        stratify=y,
+    )
+
+    output_dir = Path("data/processed")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    X_train.to_csv(output_dir / "X_train.csv", index=False)
+    X_test.to_csv(output_dir / "X_test.csv", index=False)
+    y_train.to_frame().to_csv(output_dir / "y_train.csv", index=False)
+    y_test.to_frame().to_csv(output_dir / "y_test.csv", index=False)
+
+    print(f"X_train shape: {X_train.shape}")
+    print(f"X_test shape: {X_test.shape}")
+    print(f"y_train shape: {y_train.shape}")
+    print(f"y_test shape: {y_test.shape}")
+
+    return X_train, X_test, y_train, y_test
+
+
+def run_preprocessing():
+    data_path = ensure_dataset_downloaded()
+    dataframe = pd.read_csv(data_path)
+    cleaned_df = clean_data(dataframe)
+    imputed_df = handle_missing_values(cleaned_df)
+    encoded_df = encode_features(imputed_df)
+    X_train, X_test, y_train, y_test = split_data(encoded_df)
+
+    print("Preprocessing complete.")
+
+    return X_train, X_test, y_train, y_test
+
+
+if __name__ == "__main__":
+    run_preprocessing()
+
+===== FILE: src/shap_explainer.py =====
+import joblib
+import numpy as np
+import shap
+
+
+def explain_single_prediction(input_df):
+    model = joblib.load("models/random_forest.pkl")
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(input_df)
+    print("SHAP values shape:", type(shap_values))
+
+    if isinstance(shap_values, list):
+        shap_row = shap_values[1][0]
+    elif isinstance(shap_values, np.ndarray) and shap_values.ndim == 3:
+        shap_row = shap_values[0, :, 1]
+    elif isinstance(shap_values, np.ndarray) and shap_values.ndim == 2:
+        shap_row = shap_values[0]
+    else:
+        raise ValueError(f"Unsupported SHAP output format: {type(shap_values)}")
+
+    explanations = []
+
+    for feature, shap_value in zip(input_df.columns, shap_row):
+        explanations.append(
+            {
+                "feature": feature,
+                "shap_value": float(shap_value),
+                "direction": (
+                    "increases risk" if shap_value > 0 else "decreases risk"
+                ),
+            }
+        )
+
+    explanations.sort(key=lambda item: abs(item["shap_value"]), reverse=True)
+    return explanations[:5]
+
+===== FILE: src/shap_explanations.py =====
+from pathlib import Path
+
+import joblib
+import matplotlib.pyplot as plt
+import pandas as pd
+import shap
+
+
+def generate_shap_summary():
+    model = joblib.load("models/random_forest.pkl")
+    X_test_sample = pd.read_csv("data/processed/X_test.csv").head(100)
+
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(X_test_sample)
+
+    output_dir = Path("outputs/plots")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    shap.summary_plot(shap_values[1], X_test_sample, show=False)
+    plt.savefig(output_dir / "shap_summary.png")
+    plt.close()
+
+
+def explain_single_prediction(input_df):
+    model = joblib.load("models/random_forest.pkl")
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(input_df)
+
+    single_row_values = shap_values[1][0]
+    explanations = []
+
+    for feature, shap_value in zip(input_df.columns, single_row_values):
+        explanations.append(
+            {
+                "feature": feature,
+                "shap_value": float(shap_value),
+                "direction": (
+                    "increases risk" if shap_value > 0 else "decreases risk"
+                ),
+            }
+        )
+
+    explanations.sort(key=lambda item: abs(item["shap_value"]), reverse=True)
+    return explanations[:5]
+
+
+if __name__ == "__main__":
+    generate_shap_summary()
+
+===== FILE: src/train_logistic_regression.py =====
+from pathlib import Path
+
+import joblib
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+
+
+def train_logistic_regression():
+    X_train = pd.read_csv("data/processed/X_train.csv")
+    y_train = pd.read_csv("data/processed/y_train.csv").squeeze("columns")
+
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+
+    model = LogisticRegression(
+        max_iter=1000,
+        random_state=42,
+        class_weight="balanced",
+    )
+    model.fit(X_train_scaled, y_train)
+
+    training_accuracy = model.score(X_train_scaled, y_train)
+    print(f"Training accuracy: {training_accuracy}")
+
+    models_dir = Path("models")
+    models_dir.mkdir(parents=True, exist_ok=True)
+
+    joblib.dump(model, models_dir / "logistic_regression.pkl")
+    print("Logistic Regression model saved.")
+
+    joblib.dump(scaler, models_dir / "scaler.pkl")
+    print("Scaler saved.")
+
+
+if __name__ == "__main__":
+    train_logistic_regression()
+
+===== FILE: src/train_random_forest.py =====
+from pathlib import Path
+
+import joblib
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+
+
+def train_random_forest():
+    X_train = pd.read_csv("data/processed/X_train.csv")
+    y_train = pd.read_csv("data/processed/y_train.csv").squeeze("columns")
+
+    model = RandomForestClassifier(
+        n_estimators=100,
+        random_state=42,
+        class_weight="balanced",
+        n_jobs=-1,
+    )
+    model.fit(X_train, y_train)
+
+    training_accuracy = model.score(X_train, y_train)
+    print(f"Training accuracy: {training_accuracy}")
+
+    models_dir = Path("models")
+    models_dir.mkdir(parents=True, exist_ok=True)
+    joblib.dump(model, models_dir / "random_forest.pkl")
+    print("Random Forest model saved.")
+
+
+if __name__ == "__main__":
+    train_random_forest()
+
+===== FILE: app/backend/app.py =====
+from pathlib import Path
+import sys
+
+import joblib
+import pandas as pd
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+SRC_DIR = PROJECT_ROOT / "src"
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+from shap_explainer import explain_single_prediction
+
+
+rf_model = joblib.load(PROJECT_ROOT / "models/random_forest.pkl")
+lr_model = joblib.load(PROJECT_ROOT / "models/logistic_regression.pkl")
+scaler = joblib.load(PROJECT_ROOT / "models/scaler.pkl")
+feature_columns = joblib.load(PROJECT_ROOT / "models/feature_columns.pkl")
+
+app = Flask(__name__)
+CORS(app)
+
+
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify(
+        {
+            "status": "ok",
+            "message": "Mental Health Prediction API is running",
+        }
+    )
+
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    try:
+        input_json = request.get_json()
+        input_df = pd.DataFrame([input_json]).reindex(
+            columns=feature_columns,
+            fill_value=0,
+        )
+
+        rf_prediction = rf_model.predict(input_df)[0]
+        rf_probability = float(rf_model.predict_proba(input_df)[0][1])
+
+        scaled_input = scaler.transform(input_df)
+        lr_prediction = lr_model.predict(scaled_input)[0]
+        lr_probability = float(lr_model.predict_proba(scaled_input)[0][1])
+
+        shap_explanation = explain_single_prediction(input_df)
+
+        return jsonify(
+            {
+                "prediction": (
+                    "Likely to seek treatment"
+                    if rf_prediction == 1
+                    else "Unlikely to seek treatment"
+                ),
+                "probability": rf_probability,
+                "confidence_percent": int(round(rf_probability * 100)),
+                "model_used": "Random Forest",
+                "shap_explanation": shap_explanation,
+                "lr_prediction": (
+                    "Likely to seek treatment"
+                    if lr_prediction == 1
+                    else "Unlikely to seek treatment"
+                ),
+                "lr_probability": lr_probability,
+            }
+        )
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+if __name__ == "__main__":
+    app.run(port=5000, debug=False)
+
+
+==================== STEP 6 — FRONTEND FILES ====================
+===== FILE: app/frontend/index.html =====
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Workplace Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero-card">
+            <p class="eyebrow">Workplace Mental Health Screening</p>
+            <h1>Mental Health Workplace Assessment</h1>
+            <p class="subtitle">
+                Answer a few workplace and wellbeing questions to explore treatment-seeking risk patterns.
+            </p>
+        </header>
+
+        <main class="content-card">
+            <section class="step-indicator" aria-label="Progress">
+                <div class="step-item active" data-step-indicator="1">
+                    <span class="step-circle">1</span>
+                    <span class="step-label">Step 1</span>
+                </div>
+                <div class="step-item" data-step-indicator="2">
+                    <span class="step-circle">2</span>
+                    <span class="step-label">Step 2</span>
+                </div>
+                <div class="step-item" data-step-indicator="3">
+                    <span class="step-circle">3</span>
+                    <span class="step-label">Step 3</span>
+                </div>
+            </section>
+
+            <form class="assessment-form" id="assessment-form">
+                <section id="step-1" class="form-step">
+                    <h2>Personal Background</h2>
+
+                    <label for="age">Age</label>
+                    <input id="age" name="Age" type="number" min="18" max="75" required>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="family-history">Family history of mental illness</label>
+                    <select id="family-history" name="family_history">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <label for="self-employed">Self-employed</label>
+                    <select id="self-employed" name="self_employed">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <div class="button-row align-right">
+                        <button type="button" class="primary-button" id="step-1-next">Next</button>
+                    </div>
+                </section>
+
+                <section id="step-2" class="form-step" hidden>
+                    <h2>Workplace Context</h2>
+
+                    <label for="company-size">Company size</label>
+                    <select id="company-size" name="no_employees">
+                        <option value="1-5">1-5</option>
+                        <option value="6-25">6-25</option>
+                        <option value="26-100">26-100</option>
+                        <option value="100-500">100-500</option>
+                        <option value="500-1000">500-1000</option>
+                        <option value="More than 1000">More than 1000</option>
+                    </select>
+
+                    <label for="remote-work">Remote work</label>
+                    <select id="remote-work" name="remote_work">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Sometimes">Sometimes</option>
+                    </select>
+
+                    <label for="tech-company">Tech company</label>
+                    <select id="tech-company" name="tech_company">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <label for="benefits">Mental health benefits provided</label>
+                    <select id="benefits" name="benefits">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Don't know">Don't know</option>
+                    </select>
+
+                    <div class="button-row">
+                        <button type="button" class="secondary-button" id="step-2-back">Back</button>
+                        <button type="button" class="primary-button" id="step-2-next">Next</button>
+                    </div>
+                </section>
+
+                <section id="step-3" class="form-step" hidden>
+                    <h2>Support and Disclosure</h2>
+
+                    <label for="work-interfere">Work interference with daily tasks</label>
+                    <select id="work-interfere" name="work_interfere">
+                        <option value="Never">Never</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Often">Often</option>
+                    </select>
+
+                    <label for="seek-help">Employer encourages seeking help</label>
+                    <select id="seek-help" name="seek_help">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Don't know">Don't know</option>
+                    </select>
+
+                    <label for="negative-consequences">Fear of negative consequences for disclosure</label>
+                    <select id="negative-consequences" name="mental_health_consequence">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Maybe">Maybe</option>
+                    </select>
+
+                    <label for="care-options">Care options available</label>
+                    <select id="care-options" name="care_options">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+
+                    <div class="button-row">
+                        <button type="button" class="secondary-button" id="step-3-back">Back</button>
+                        <button type="submit" class="primary-button" id="submit-button">Submit</button>
+                    </div>
+                </section>
+            </form>
+
+            <section id="results" class="results-card" hidden>
+                <div id="prediction-banner" class="prediction-banner positive">
+                    Prediction will appear here.
+                </div>
+
+                <div class="confidence-section">
+                    <div class="section-heading">
+                        <h3>Confidence Score</h3>
+                        <span id="confidence-percent">0%</span>
+                    </div>
+                    <div class="confidence-track">
+                        <div id="confidence-bar" class="confidence-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div id="shap-explanation" class="explanation-section">
+                    <h3>Top SHAP Drivers</h3>
+                    <div class="shap-list">
+                        <div class="shap-item">
+                            <span class="shap-label">Feature name</span>
+                            <div class="shap-bar-track">
+                                <div class="shap-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="model-comparison" class="comparison-section">
+                    <h3>Model Comparison</h3>
+                    <p>Random Forest and Logistic Regression outputs will be shown here.</p>
+                </div>
+
+                <p class="disclaimer">
+                    This assessment is not a diagnosis and should not replace professional medical advice or care.
+                </p>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>For educational purposes only.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+===== FILE: app/frontend/style.css =====
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary: #4a90d9;
+    --primary-dark: #2f6daa;
+    --page-bg: linear-gradient(180deg, #eef5ff 0%, #f8fbff 48%, #f3f7f2 100%);
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --border: #d7e2ee;
+    --text-main: #16324a;
+    --text-soft: #5b7387;
+    --shadow: 0 24px 60px rgba(36, 77, 121, 0.12);
+    --positive-bg: #e7f6ec;
+    --negative-bg: #fff2e2;
+    --bar-blue-1: #9dcbf6;
+    --bar-blue-2: #4a90d9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--page-bg);
+    color: var(--text-main);
+}
+
+.page-shell {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 18px 48px;
+}
+
+.hero-card,
+.content-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+}
+
+.hero-card {
+    padding: 28px 28px 22px;
+    margin-bottom: 18px;
+}
+
+.content-card {
+    padding: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+.subtitle {
+    margin: 12px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.step-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 18px;
+    background: #f3f7fb;
+    color: var(--text-soft);
+}
+
+.step-item.active {
+    background: rgba(74, 144, 217, 0.12);
+    color: var(--primary);
+}
+
+.step-circle {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #d9e6f3;
+    font-weight: 700;
+}
+
+.step-item.active .step-circle {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.step-label {
+    font-weight: 600;
+}
+
+.form-step h2,
+.results-card h3 {
+    margin-top: 0;
+}
+
+.assessment-form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 600;
+}
+
+.assessment-form input,
+.assessment-form select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #ffffff;
+    color: var(--text-main);
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.assessment-form input:focus,
+.assessment-form select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(74, 144, 217, 0.14);
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.button-row.align-right {
+    justify-content: flex-end;
+}
+
+.primary-button,
+.secondary-button {
+    border: none;
+    border-radius: 14px;
+    padding: 14px 22px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.primary-button {
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 12px 24px rgba(74, 144, 217, 0.24);
+}
+
+.primary-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    background: #eaf0f6;
+    color: var(--text-main);
+}
+
+.secondary-button:hover {
+    background: #dde7f0;
+    transform: translateY(-1px);
+}
+
+.results-card {
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 22px;
+    background: var(--positive-bg);
+}
+
+.results-card.negative {
+    background: var(--negative-bg);
+}
+
+.prediction-banner {
+    padding: 16px 18px;
+    border-radius: 18px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.prediction-banner.positive {
+    background: rgba(80, 162, 111, 0.14);
+    color: #256041;
+}
+
+.prediction-banner.negative {
+    background: rgba(217, 150, 74, 0.16);
+    color: #8d5a14;
+}
+
+.confidence-section,
+.explanation-section,
+.comparison-section {
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.section-heading h3 {
+    margin: 0;
+}
+
+.confidence-track {
+    width: 100%;
+    height: 16px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #dbe9f7;
+}
+
+.confidence-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--bar-blue-1), var(--bar-blue-2));
+    animation: fillBar 1.1s ease forwards;
+}
+
+.shap-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.shap-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.shap-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.shap-label {
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.shap-direction {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+}
+
+.shap-bar-track {
+    width: 100%;
+    height: 12px;
+    border-radius: 999px;
+    background: rgba(74, 144, 217, 0.14);
+    overflow: hidden;
+}
+
+.shap-bar {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #7fb5eb, #3b7bc0);
+}
+
+.disclaimer {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+}
+
+.page-footer {
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    padding-top: 18px;
+}
+
+.error-message {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: rgba(195, 61, 61, 0.1);
+    color: #9a2f2f;
+    font-weight: 600;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-shell {
+        padding: 20px 14px 36px;
+    }
+
+    .step-indicator,
+    .button-row,
+    .shap-item,
+    .section-heading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .step-item {
+        justify-content: flex-start;
+    }
+
+    .button-row {
+        display: flex;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .shap-item {
+        display: flex;
+    }
+}
+
+===== FILE: app/frontend/script.js =====
+const stepSections = [
+    document.getElementById("step-1"),
+    document.getElementById("step-2"),
+    document.getElementById("step-3"),
+];
+const stepIndicators = document.querySelectorAll("[data-step-indicator]");
+const form = document.getElementById("assessment-form");
+const resultsSection = document.getElementById("results");
+const predictionBanner = document.getElementById("prediction-banner");
+const confidenceBar = document.getElementById("confidence-bar");
+const confidencePercent = document.getElementById("confidence-percent");
+const shapExplanation = document.getElementById("shap-explanation");
+const modelComparison = document.getElementById("model-comparison");
+const submitButton = document.getElementById("submit-button");
+
+function showStep(stepNumber) {
+    stepSections.forEach((section, index) => {
+        section.hidden = index !== stepNumber - 1;
+    });
+
+    stepIndicators.forEach((indicator) => {
+        indicator.classList.toggle(
+            "active",
+            Number(indicator.dataset.stepIndicator) === stepNumber
+        );
+    });
+}
+
+function validateStep(stepNumber) {
+    const currentStep = document.getElementById(`step-${stepNumber}`);
+    const fields = currentStep.querySelectorAll("input, select");
+
+    for (const field of fields) {
+        if (!field.checkValidity()) {
+            field.reportValidity();
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function encodeYesNo(value) {
+    return value === "Yes" ? 1 : 0;
+}
+
+function encodeCompanySize(value) {
+    const mapping = {
+        "1-5": 0,
+        "6-25": 1,
+        "26-100": 2,
+        "100-500": 3,
+        "500-1000": 4,
+        "More than 1000": 5,
+    };
+    return mapping[value] ?? 0;
+}
+
+function encodeWorkInterfere(value) {
+    const mapping = {
+        Never: 0,
+        Rarely: 1,
+        Sometimes: 2,
+        Often: 3,
+    };
+    return mapping[value] ?? 0;
+}
+
+function buildPayload() {
+    const gender = document.getElementById("gender").value;
+
+    return {
+        Age: Number(document.getElementById("age").value),
+        Gender_Male: gender === "Male" ? 1 : 0,
+        Gender_Female: gender === "Female" ? 1 : 0,
+        Gender_Other: gender === "Other" ? 1 : 0,
+        family_history: encodeYesNo(document.getElementById("family-history").value),
+        self_employed: encodeYesNo(document.getElementById("self-employed").value),
+        no_employees: encodeCompanySize(document.getElementById("company-size").value),
+        remote_work: document.getElementById("remote-work").value,
+        tech_company: encodeYesNo(document.getElementById("tech-company").value),
+        benefits: document.getElementById("benefits").value,
+        care_options: document.getElementById("care-options").value,
+        wellness_program: 0,
+        seek_help: document.getElementById("seek-help").value,
+        work_interfere: encodeWorkInterfere(document.getElementById("work-interfere").value),
+    };
+}
+
+function showErrorMessage() {
+    let errorDiv = document.getElementById("error-message");
+
+    if (!errorDiv) {
+        errorDiv = document.createElement("div");
+        errorDiv.id = "error-message";
+        errorDiv.className = "error-message";
+        form.insertAdjacentElement("afterend", errorDiv);
+    }
+
+    errorDiv.textContent = "Something went wrong. Please try again.";
+}
+
+function clearErrorMessage() {
+    const errorDiv = document.getElementById("error-message");
+    if (errorDiv) {
+        errorDiv.remove();
+    }
+}
+
+function renderShapExplanation(items) {
+    const maxAbsValue = Math.max(
+        ...items.map((item) => Math.abs(item.shap_value)),
+        1
+    );
+
+    const shapListMarkup = items
+        .map((item) => {
+            const widthPercent = (Math.abs(item.shap_value) / maxAbsValue) * 100;
+            return `
+                <div class="shap-item">
+                    <div class="shap-meta">
+                        <span class="shap-label">${item.feature}</span>
+                        <span class="shap-direction">${item.direction}</span>
+                    </div>
+                    <div class="shap-bar-track">
+                        <div class="shap-bar" style="width: ${widthPercent}%;"></div>
+                    </div>
+                </div>
+            `;
+        })
+        .join("");
+
+    shapExplanation.innerHTML = `
+        <h3>Top SHAP Drivers</h3>
+        <div class="shap-list">${shapListMarkup}</div>
+    `;
+}
+
+function renderResults(data) {
+    resultsSection.hidden = false;
+    resultsSection.classList.remove("negative");
+    predictionBanner.classList.remove("positive", "negative");
+
+    const isLikely = data.prediction.includes("Likely");
+    predictionBanner.textContent = data.prediction;
+    predictionBanner.classList.add(isLikely ? "positive" : "negative");
+    if (!isLikely) {
+        resultsSection.classList.add("negative");
+    }
+
+    confidenceBar.style.width = "0%";
+    requestAnimationFrame(() => {
+        confidenceBar.style.width = `${data.confidence_percent}%`;
+    });
+    confidencePercent.textContent = `${data.confidence_percent}%`;
+
+    renderShapExplanation(data.shap_explanation || []);
+
+    modelComparison.innerHTML = `
+        <h3>Model Comparison</h3>
+        <p>Random Forest: ${data.prediction} (${(data.probability * 100).toFixed(1)}%)</p>
+        <p>Logistic Regression: ${data.lr_prediction} (${(data.lr_probability * 100).toFixed(1)}%)</p>
+    `;
+
+    resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.getElementById("step-1-next").addEventListener("click", () => {
+    if (validateStep(1)) {
+        showStep(2);
+    }
+});
+
+document.getElementById("step-2-next").addEventListener("click", () => {
+    if (validateStep(2)) {
+        showStep(3);
+    }
+});
+
+document.getElementById("step-2-back").addEventListener("click", () => showStep(1));
+document.getElementById("step-3-back").addEventListener("click", () => showStep(2));
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!validateStep(3)) {
+        return;
+    }
+
+    clearErrorMessage();
+    submitButton.innerHTML = "Analyzing...";
+    submitButton.disabled = true;
+
+    try {
+        const response = await fetch("http://localhost:5000/predict", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(buildPayload()),
+        });
+
+        if (!response.ok) {
+            throw new Error("Prediction request failed");
+        }
+
+        const data = await response.json();
+        renderResults(data);
+    } catch (error) {
+        showErrorMessage();
+    } finally {
+        submitButton.innerHTML = "Submit";
+        submitButton.disabled = false;
+    }
+});
+
+showStep(1);
+
+
+==================== STEP 7 — LIVE PREDICTION TEST ====================
+Predicted class: 1
+Prediction probability: 0.51
+Top 5 feature importances:
+       feature  importance
+           Age    0.119011
+work_interfere    0.108890
+family_history    0.102527
+  no_employees    0.064180
+  care_options    0.062460
+
+==================== STEP 8 — OUTPUT FILES ====================
+Files in outputs/:
+- feature_importance.csv
+- model_comparison.csv
+Files in outputs/plots/:
+- .gitkeep: 0.00 KB
+- feature_importance.png: 34.57 KB
+- lr_confusion_matrix.png: 18.41 KB
+- rf_confusion_matrix.png: 17.96 KB
+
+==================== STEP 9 — SUMMARY REPORT ====================
+Dataset:
+- Rows, columns: (1259, 27)
+- Target distribution:
+treatment
+Yes    637
+No     622
+Preprocessing:
+- Columns after preprocessing (24):
+  - Age
+  - self_employed
+  - family_history
+  - work_interfere
+  - no_employees
+  - remote_work
+  - tech_company
+  - benefits
+  - care_options
+  - wellness_program
+  - seek_help
+  - anonymity
+  - leave
+  - mental_health_consequence
+  - phys_health_consequence
+  - coworkers
+  - supervisor
+  - mental_health_interview
+  - phys_health_interview
+  - mental_vs_physical
+  - obs_consequence
+  - Gender_Female
+  - Gender_Male
+  - Gender_Other
+- Encodings applied: label encoding, ordinal encoding, and one-hot encoding for Gender.
+Models:
+- Random Forest: RandomForestClassifier, n_estimators=100, class_weight=balanced, random_state=42
+- Logistic Regression: LogisticRegression, max_iter=1000, class_weight=balanced, random_state=42
+- Logistic Regression fitted iterations: [9]
+- Training accuracy if available: not stored separately in saved artifacts.
+Features:
+- Total feature count: 24
+- Top 5 by importance:
+       feature  importance
+           Age    0.119011
+work_interfere    0.108890
+family_history    0.102527
+  no_employees    0.064180
+  care_options    0.062460
+Frontend:
+- app/frontend/index.html
+- app/frontend/style.css
+- app/frontend/script.js
+Issues found:
+- No issues found.
